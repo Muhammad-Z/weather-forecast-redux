@@ -9,16 +9,16 @@ export default function CurrentWeather(/* { forecastCtx } */) {
 
   useEffect(() => {
 
-    if (location && !currentWeather) {
+    if (location) {
       console.log('da loc is ', location)
-      getCurrentWeather({ lat: 39, lon: 18 }).then(res =>
+      getCurrentWeather({ lat: location.lat, lon: location.lon }).then(res =>
         dispatch({
           type: 'currentWeather/loadCurrentWeather', payload:
             res
         })
       )
     }
-  }, [location, currentWeather])
+  }, [location])
 
   return (currentWeather && <div className="current-container">
     <div className="date-location-container">

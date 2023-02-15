@@ -16,7 +16,7 @@ export default function Main() {
   const [selectedDay, setSelectedDay] = useState(1);
 
   useEffect(() => {
-    getfiveDays({ lat: 30, lon: 18 }).then(res =>
+    getfiveDays({ lat: location.lat, lon: location.lon }).then(res =>
       dispatch({ type: 'fiveDays/loadFiveDays', payload: res }))
   }, [location])
 
