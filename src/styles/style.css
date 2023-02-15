@@ -217,6 +217,7 @@ main {
 }
 
 .search-container li {
+  cursor: pointer;
   color: black;
   border-bottom: 1px solid #b7b5b5;
   background-color: white;
