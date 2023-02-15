@@ -1,0 +1,21 @@
+.light-theme {
+  --header-bg-color: #5499FF;
+  --header-font-color: rgb(133, 52, 52);
+  --input-bg-color: #85B6FD;
+  --input-font-color: #fff;
+  --main-bg-color: #F6F6F7;
+  --main-font-color: #000;
+  --box-bg-color: #FEFEFE;
+  --card-border-color:#4491FF;
+}
+
+.dark-theme {
+  --header-bg-color: #2D3960;
+  --header-font-color: #fff;
+  --input-bg-color: #3B4770;
+  --input-font-color: #fff;
+  --main-bg-color: #323F67;
+  --main-font-color: #fff;
+  --box-bg-color: #3B4770;
+  --card-border-color:#4491FF;
+}
