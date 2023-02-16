@@ -100,9 +100,8 @@ export default function Header({setTheme} ) {
 
 
       <div className="row">
-        {/*     {forecast?.locati
-        on && <><span className="location">{forecast.location.name}, {forecast.location.country}</span>
-        <span className="date"></span></>} */}
+       {location && <><span className="location">{location.name}, {location.country}</span>
+        {/* <span className="date"></span> */}</>}
         {/*         <LocationInfo /> */}
       </div>
 
